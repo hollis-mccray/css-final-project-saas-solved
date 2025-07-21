@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  min-width: 360px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  height: 70px;
+}
+
+.logo {
+  width: 100px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top-navigation {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.top-navigation ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.top-navigation ul li {
+  width: 100px;
+  text-align: right;
+}
+
+.blue-button {
+  color: white;
+  background-color: cornflowerblue;
+  border: 0;
+  padding: 20px;
+  font-size: 16px;
+  border-radius: 28px;
+}
+
+.top-section {
+  display: flex;
+  background-image: url("/assets/bg/background-top.svg");
+  padding: 20px;
+  align-items: center;
+  gap: 30px;
+}
+
+.sales-pitch {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sales-large {
+  font-size: 40px;
+}
+
+.sales-nav {
+  display: flex;
+  gap: 20px;
+  justify-content: start;
+  align-items: center;
+}
+
+.client-logos {
+  display: flex;
+}
+
+.logo-lg {
+  border-radius: 50%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  box-shadow: 0 0 5px 5px lightgray;
+}
+
+.logo-sm {
+  border-radius: 50%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  box-shadow: 0 0 5px 5px lightgray;
+}
+
+.logo-lg img,
+.logo-sm img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 1024px) {
+  .menu-option:hover {
+    color: cornflowerblue;
+  }
+  .top-navigation .trigram {
+    display: none;
+  }
+}
